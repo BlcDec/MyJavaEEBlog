@@ -12,5 +12,5 @@
   </head>
   <body>
   $END$
-  </body>   
+  </body>
 </html>
