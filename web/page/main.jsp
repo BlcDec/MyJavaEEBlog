@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>首页 | MyBlog</title>
+<title>首页 | BlcDec</title>
 <!-- Bootstrap core CSS -->
 <link	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom styles for this template -->
@@ -24,12 +24,12 @@
 			<div class="col-md-3" id="left_content">
 
 				<div id="title">
-					<h2><a href="/Blog/login.html">MyBlog</a></h2>
-					<h5 class="text-muted">Winner Winner Chicken Dinner!</h5>
+					<h2><a href="/login.html">MyBlog</a></h2>
+					<h5 class="text-muted">Follow Your Heart!</h5>
 				</div>
 
 				<div class="c_center" id="person_info">
-					<img src="/Blog/img/header.jpg" height="130" width="130"
+					<img src="/img/header.jpg" height="130" width="130"
 						alt="丢失了我的头像?" class="img-circle">
 					<h4 class="text-muted">Lemonreds</h4>
 					<h5 class="text-muted">星星和浮云.</h5>
@@ -41,10 +41,10 @@
 						<a href="#">${article_number}<br/>日志</a>
 					</div>
 					<div class="inline ">
-						<a href="/Blog/SortServlet?get=all"><span> ${sort_number} </span><br/>分类</a>
+						<a href="/SortServlet?get=all"><span> ${sort_number} </span><br/>分类</a>
 					</div>
 					<div class="inline " >
-						<a href="/Blog/TagsServlet?get=all"><span>${tags_number}</span><br/>标签</a>
+						<a href="/TagsServlet?get=all"><span>${tags_number}</span><br/>标签</a>
 					</div>
 					
 				</div>
@@ -53,23 +53,23 @@
 				<div id="list">
 					<table class="table table-hover c_center">
 						<tr class="active">
-							<td><a href="/Blog/index.jsp	"><span class="glyphicon glyphicon-home"></span>
+							<td><a href="/index.jsp	"><span class="glyphicon glyphicon-home"></span>
 								&nbsp;&nbsp;首页</a></td>
 						</tr>
 						<tr>	
-							<td><a href="/Blog/SortServlet?get=all"><span class="glyphicon glyphicon-list"></span>
+							<td><a href="/SortServlet?get=all"><span class="glyphicon glyphicon-list"></span>
 								&nbsp;&nbsp;分类</a></td>
 						</tr>
 						<tr>
-							<td><a href="/Blog/TagsServlet?get=all"><span class="glyphicon glyphicon-tags"></span>
+							<td><a href="/TagsServlet?get=all"><span class="glyphicon glyphicon-tags"></span>
 								&nbsp;&nbsp;标签</a></td>
 						</tr>						
 						<tr>
-							<td><a href="/Blog/AxisServlet"><span class="glyphicon glyphicon-book"></span>
+							<td><a href="/AxisServlet"><span class="glyphicon glyphicon-book"></span>
 								&nbsp;&nbsp;时间轴</a></td>
 						</tr>
 						<tr>
-							<td><a href="/Blog/page/about.html"><span class="glyphicon glyphicon-user"></span>
+							<td><a href="/page/about.html"><span class="glyphicon glyphicon-user"></span>
 								&nbsp;&nbsp;关于</a></td>
 						</tr>
 					</table>
@@ -82,7 +82,7 @@
 						<span class="list-group-item active">分类</span>						
 						<!-- 这里初始化分类 -->
 						<c:forEach var="entity"  items="${sort_count_map}">
-						 <a href="/Blog/SortServlet?get=${entity.key}" class="list-group-item">${entity.key}&nbsp;&nbsp;&nbsp;&nbsp; (${entity.value})</a>						
+						 <a href="/SortServlet?get=${entity.key}" class="list-group-item">${entity.key}&nbsp;&nbsp;&nbsp;&nbsp; (${entity.value})</a>
 						</c:forEach>									
 						<!-- 初始化结束 -->						
 					</div>
@@ -94,7 +94,7 @@
 						<span class="list-group-item active">阅读排行</span>						
 						<!-- 这里初始化阅读排行 -->
 						<c:forEach var="a"  items="${visit_rank}">
-						 <a href="/Blog/ArticleServlet?id=${a.id}" class="list-group-item">${a.title}&nbsp;&nbsp; <span class="c_right">(${a.visit})</span></a>						
+						 <a href="/ArticleServlet?id=${a.id}" class="list-group-item">${a.title}&nbsp;&nbsp; <span class="c_right">(${a.visit})</span></a>
 						</c:forEach>									
 						<!-- 初始化结束 -->						
 					</div>
@@ -110,11 +110,11 @@
 						<c:forEach var="t"  varStatus="status" items="${tag_list}" >		
 						<c:choose>
 						<c:when test="${status.count%2==1}">
-							<span class="label label-info"><a href="/Blog/TagsServlet?get=${t.tag}">
+							<span class="label label-info"><a href="/TagsServlet?get=${t.tag}">
 							&nbsp;${t.tag}&nbsp;</a></span>							
 						</c:when>
 						<c:otherwise>
-								<span class="label label-success"><a href="/Blog/TagsServlet?get=${t.tag}">
+								<span class="label label-success"><a href="/TagsServlet?get=${t.tag}">
 								&nbsp;${t.tag}&nbsp;</a></span>						
 						</c:otherwise>
 						</c:choose>
@@ -127,10 +127,10 @@
 				
 			<!-- admin here -->
 			<c:if test="${sessionScope.user!=null}">
-			<a href="/Blog/AddServlet">
+			<a href="/AddServlet">
 			<span class="glyphicon glyphicon-plus">&nbsp;&nbsp;写新文章&nbsp;&nbsp;</span>
 			</a>
-			<a href="/Blog/AdminServlet">
+			<a href="/AdminServlet">
 			<span class="glyphicon glyphicon glyphicon-user">&nbsp;&nbsp;管理更多&nbsp;&nbsp;</span>
 			</a>
 			</c:if>
@@ -149,15 +149,15 @@
 					<!-- 这里初始化文章列表 -->
 					<c:forEach var="article"   items="${article_list}" >	
 					<div  class="list-group-item">									
-					<h4><a href="/Blog/ArticleServlet?id=${article.id}">${article.title}</a></h4>
+					<h4><a href="/ArticleServlet?id=${article.id}">${article.title}</a></h4>
 					<br/>
 					<span>${article.time}&nbsp;&nbsp;|</span>
-					<a href="/Blog/SortServlet?get=${article.sort}">${article.sort}</a>&nbsp;&nbsp;|
+					<a href="/SortServlet?get=${article.sort}">${article.sort}</a>&nbsp;&nbsp;|
 					<span>阅读次数: ${article.visit}</span>
 					<br/><br/>					
 					<span>${article.content}</span>
 					<br/><br/><br/>	
-					<a href="/Blog/ArticleServlet?id=${article.id}">阅读全文</a>
+					<a href="/ArticleServlet?id=${article.id}">阅读全文</a>
 					<br/>			
 					</div>
 					</c:forEach>
@@ -169,9 +169,9 @@
 			</div><!-- container -->
 	<div id="footer">
 		<div>
-			<a href="https://github.com/Lemonreds"><img src="/Blog/img/github.png"width="20px" height="20px" class="img-circle">&nbsp;&nbsp;GitHub</a>
+			<a href="https://github.com/blcdec"><img src="/img/github.png"width="20px" height="20px" class="img-circle">&nbsp;&nbsp;GitHub</a>
 			&nbsp;|
-			<a href="#">&nbsp;&nbsp;MyBlog</a>
+			<a href="#">&nbsp;&nbsp;BlcDec</a>
 			<br/>
 			copyright © 2017
 		</div>		

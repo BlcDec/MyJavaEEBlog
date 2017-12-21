@@ -28,7 +28,7 @@
 		<div class="head">
 			<div id="title">
 				<h2>
-					<a href="/Blog/index.jsp">MyBlog</a>
+					<a href="/index.jsp">BlcDec</a>
 				</h2>
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 				<br />
 				<div>
 					<h5>
-						<span>${article.time}</span> <a href="/Blog/SortServlet?get=${article.sort}">${article.sort}</a>
+						<span>${article.time}</span> <a href="/SortServlet?get=${article.sort}">${article.sort}</a>
 					${article.author}
 					</h5>
 				</div>
@@ -53,7 +53,7 @@
 				</div>
 				<div id="tag">
 				<c:forEach var="t" items="${article_tags}">
-					<a href="/Blog/TagsServlet?get=${t.tag}">${t.tag}&nbsp;</a>
+					<a href="/TagsServlet?get=${t.tag}">${t.tag}&nbsp;</a>
 				</c:forEach>
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 					
 					<c:choose>
 						<c:when test="${article_pre!=null}">
-							<a href="/Blog/ArticleServlet?id=${article_pre.id}">&nbsp;上一篇:${article_pre.title}</a>
+							<a href="/ArticleServlet?id=${article_pre.id}">&nbsp;上一篇:${article_pre.title}</a>
 						</c:when>					
 						<c:otherwise>
 							&nbsp;没有更早的文章了
@@ -87,7 +87,7 @@
 				
 						<c:choose>
 						<c:when test="${article_next!=null}">
-							<a href="/Blog/ArticleServlet?id=${article_next.id}">下一篇:&nbsp;${article_next.title}</a>
+							<a href="/ArticleServlet?id=${article_next.id}">下一篇:&nbsp;${article_next.title}</a>
 						</c:when>					
 						<c:otherwise>
 							&nbsp;没有更多的文章了
@@ -118,7 +118,7 @@
 			
 			<div class="row" >
 			<div class="f_div">		
-			<img src="/Blog/img/comment.jpg" height="50" width="50"  class="img-circle"/>
+			<img src="/img/comment.jpg" height="50" width="50"  class="img-circle"/>
 			&nbsp;&nbsp;			
 			<span style="color: #428bca"> ${comm.nickname}</span>					
 			<span>&nbsp;&nbsp;${comm.time}</span>
@@ -150,7 +150,7 @@
 			<!-- 写评论 -->
 			<div id="comment">
 			
-			<form action="/Blog/NewCommentServlet?id=${article.id}" method="post">
+			<form action="/NewCommentServlet?id=${article.id}" method="post">
 			<input  style="width:30%" class="form-control" type="text" name="w_nickname" value="热心网友"  >
 			<br/>							
 			<textarea style="resize:none; width:100%; height:180px;" name="w_content"></textarea>
@@ -165,7 +165,7 @@
 			 	
 	</div>
 	<div id="footer">	
-	<a href="/Blog/index.jsp">MyBlog首页&nbsp;&nbsp;</a>|
+	<a href="/index.jsp">BlcDec首页&nbsp;&nbsp;</a>|
 	<a href="#">&nbsp;&nbsp;返回顶部</a>
 	</div>
 	<!-- footer -->

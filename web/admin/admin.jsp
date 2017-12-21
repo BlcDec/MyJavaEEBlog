@@ -33,7 +33,7 @@
     <div id="header">
         <div>
             <h2><a href="/Blog/login.html">MyBlog-管理</a></h2>
-            <h5 class="text-muted">有点粗糙 但能用就行</h5>
+            <h5 class="text-muted">再改改</h5>
         </div>
     </div>
 

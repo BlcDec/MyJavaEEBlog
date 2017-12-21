@@ -17,7 +17,7 @@ function getXHR(){
  * @param article_id
  */
 function love_article(article_id){
-	var url = "/Blog/AriStarServlet?id="+article_id ;		
+	var url = "/AriStarServlet?id="+article_id ;
 	// 获取ajax
 	var xmlhttp = getXHR();	
 	xmlhttp.onreadystatechange = function() {
@@ -45,7 +45,7 @@ function love_article(article_id){
 function deletecm(component,comm_id){
 	var container = component.parentNode.parentNode;
 	//alert(container);
-	var url = "/Blog/CMDeleServlet?id="+comm_id ;		
+	var url = "/CMDeleServlet?id="+comm_id ;
 	// 获取ajax
 	var xmlhttp = getXHR();	
 	xmlhttp.onreadystatechange = function() {
@@ -71,7 +71,7 @@ function deletecm(component,comm_id){
  */
 function star(component , comm_id) {
 	
-	var url = "/Blog/CMStarServlet?id="+comm_id ;		
+	var url = "/CMStarServlet?id="+comm_id ;
 	// 获取ajax
 	var xmlhttp = getXHR();	
 	xmlhttp.onreadystatechange = function() {
@@ -97,7 +97,7 @@ function star(component , comm_id) {
  */
 function diss(component , comm_id) {
 	
-	var url = "/Blog/CMDissServlet?id="+comm_id ;		
+	var url = "/CMDissServlet?id="+comm_id ;
 	// 获取ajax
 	var xmlhttp = getXHR();	
 	xmlhttp.onreadystatechange = function() {

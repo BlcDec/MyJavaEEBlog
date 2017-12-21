@@ -33,10 +33,10 @@
 <body>
 <div class="head_line"></div>
 <div class="container" id="main">
-    <div id="title"><h2><a href="/Blog/index.jsp">MyBlog</a></h2>
+    <div id="title"><h2><a href="/index.jsp">MyBlog</a></h2>
     </div>
 
-    <form action="/Blog/NewArticleServlet" method="post">
+    <form action="/NewArticleServlet" method="post">
 
         <div class="info" >
             <!-- title -->
@@ -102,7 +102,7 @@
             sequenceDiagram : true,
             imageUpload : true,
             imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-            imageUploadURL : "/Blog/UploadPic",
+            imageUploadURL : "/UploadPic",
             //后台只需要返回一个 JSON 数据
             onload : function() {
                 //console.log("onload =>", this, this.id, this.settings);

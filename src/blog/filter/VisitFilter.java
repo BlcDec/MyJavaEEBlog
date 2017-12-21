@@ -61,7 +61,7 @@ public class VisitFilter implements Filter {
 						Cookie c = new Cookie("myblog_visitor", DateUtils.getFormatDate(new Date()));
 						// cookie生命周60分钟
 						c.setMaxAge(60 * 60);
-						c.setPath("/Blog");
+						c.setPath("/");
 						rp.addCookie(c);
 					}
 				});

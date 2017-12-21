@@ -10,7 +10,7 @@
 
 <!-- preview的css -->
 <link rel="stylesheet" href="./editormd/css/style.css" />
- <link rel="stylesheet" href="./editormd/css/editormd.preview.css" />
+ <link rel="·" href="./editormd/css/editormd.preview.css" />
 
 <!-- 引入editormd相关 -->
 <script src="./editormd/js/zepto.min.js"></script>

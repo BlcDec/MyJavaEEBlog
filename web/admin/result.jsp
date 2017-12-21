@@ -21,7 +21,7 @@
     <link href="signin.css" rel="stylesheet">
 
     <!-- 引入页面公共样式 -->
-    <link type="text/css" rel="stylesheet" href="/Blog/css/public.css" />
+    <link type="text/css" rel="stylesheet" href="/css/public.css" />
 
 </head>
 <body>
@@ -35,7 +35,7 @@
                 </h4>
             </c:when>
             <c:otherwise>
-                <h4>成功!是否现在查看文章<a href="/Blog/ArticleServlet?id=${article.id}">${article.title}</a></h4>
+                <h4>成功!是否现在查看文章<a href="/ArticleServlet?id=${article.id}">${article.title}</a></h4>
             </c:otherwise>
         </c:choose>
 
@@ -48,7 +48,7 @@
 
 
 <div id="footer">
-    <a href="/Blog/index.jsp">&nbsp;&nbsp;MyBlog</a>
+    <a href="/index.jsp">&nbsp;&nbsp;BlcDec</a>
 </div>
 <!-- footer -->
 </body>

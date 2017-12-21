@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>分类 | MyBlog</title>
+<title>分类 | BlcDec</title>
 
 
 <!-- Bootstrap core CSS -->
@@ -17,8 +17,8 @@
 <link href="signin.css" rel="stylesheet">
 
 
-<link type="text/css" rel="stylesheet" href="/Blog/css/public.css" />
-<link type="text/css" rel="stylesheet" href="/Blog/css/sort.css" />
+<link type="text/css" rel="stylesheet" href="/css/public.css" />
+<link type="text/css" rel="stylesheet" href="/css/sort.css" />
 </head>
 <body>
 	<div class="head_line"></div>
@@ -32,38 +32,38 @@
 
 				<div id="title">
 					<h2>
-						<a href="/Blog/index.jsp">MyBlog</a>
+						<a href="/index.jsp">BlcDec</a>
 					</h2>
-					<h5 class="text-muted">Winner Winner Chicken Dinner!</h5>
+					<h5 class="text-muted">Follow Your Heart!</h5>
 				</div>
 
 				<div class="c_center" id="person_info">
-					<img src="/Blog/img/header.jpg" height="130" width="130"
+					<img src="/img/header.jpg" height="130" width="130"
 						alt="what?" class="img-circle">
-					<h5 class="text-muted">Chicken Dinner Again!</h5>
+					<!--<h5 class="text-muted">Chicken Dinner Again!</h5>--->
 				</div>
 
 
 				<div id="list">
 					<table class="table table-hover c_center">
 						<tr>
-							<td><a href="/Blog/index.jsp	"><span class="glyphicon glyphicon-home"></span>
+							<td><a href="/index.jsp	"><span class="glyphicon glyphicon-home"></span>
 								&nbsp;&nbsp;首页</a></td>
 						</tr>
 						<tr>	
-							<td class="active"><a href="/Blog/SortServlet?get=all"><span class="glyphicon glyphicon-list"></span>
+							<td class="active"><a href="/SortServlet?get=all"><span class="glyphicon glyphicon-list"></span>
 								&nbsp;&nbsp;分类</a></td>
 						</tr>
 						<tr>
-							<td><a href="/Blog/TagsServlet?get=all"><span class="glyphicon glyphicon-tags"></span>
+							<td><a href="/TagsServlet?get=all"><span class="glyphicon glyphicon-tags"></span>
 								&nbsp;&nbsp;标签</a></td>
 						</tr>						
 						<tr>
-							<td><a href="/Blog/AxisServlet"><span class="glyphicon glyphicon-book"></span>
+							<td><a href="AxisServlet"><span class="glyphicon glyphicon-book"></span>
 								&nbsp;&nbsp;时间轴</a></td>
 						</tr>
 						<tr>
-							<td><a href="/Blog/page/about.html"><span class="glyphicon glyphicon-user"></span>
+							<td><a href="/page/about.html"><span class="glyphicon glyphicon-user"></span>
 								&nbsp;&nbsp;关于</a></td>
 						</tr>
 					</table>
@@ -90,12 +90,12 @@
 					<li class="list-group-item">
 								<div>
 									<div>
-										<a href="/Blog/ArticleServlet?id=${list.id}">${list.title}</a>
+										<a href="//ArticleServlet?id=${list.id}">${list.title}</a>
 									</div>
 									<div class="c_right">
-									<img src="/Blog/img/time.png">
+									<img src="/img/time.png">
 									${list.time}&nbsp;&nbsp; 
-									<span class="visit"><img src="/Blog/img/visit.png">
+									<span class="visit"><img src="/img/visit.png">
 									${list.visit}	</span>
 									</div>
 								</div>
@@ -116,7 +116,7 @@
 
 
 	<div id="footer">
-		<a href="#">&nbsp;&nbsp;MyBlog</a>
+		<a href="/index.jsp">&nbsp;&nbsp;BlcDec</a>
 	</div>
 	<!-- footer -->
 
