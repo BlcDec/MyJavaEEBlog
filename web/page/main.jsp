@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: KAI
+  Date: 2017/12/10
+  Time: 10:40
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
  <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c" %>
 		
@@ -116,7 +123,7 @@
 						</c:when>
 						<c:otherwise>
 								<span class="label label-success"><a href="/TagsServlet?get=${t.tag}">
-								&nbsp;${t.tag}&nbsp;</a></span>						
+									&nbsp;${t.tag}&nbsp;</a></span>
 						</c:otherwise>
 						</c:choose>
 					

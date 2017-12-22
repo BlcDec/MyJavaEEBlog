@@ -71,7 +71,7 @@ public class ArticleUtils {
 		axisArticle.setTitle(article.getTitle());
 		axisArticle.setId(article.getId());
 		
-		//2017-09-20 21:27:14
+
 		String year=StringUtils.cutString(article.getTime(),0,4);
 		String month=StringUtils.cutString(article.getTime(),5,7);
 		String day=StringUtils.cutString(article.getTime(),8,10);

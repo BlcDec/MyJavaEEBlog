@@ -12,8 +12,7 @@ public class DateUtils {
 	
 	
 	/**
-	 * date对象转换成String (datetime)  
-	 * 	2017-09-18 12:17:18
+	 * date对象转换成String (datetime)
 	 * @param date
 	 * @return
 	 */

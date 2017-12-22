@@ -5,6 +5,7 @@
     <default-config>
         <!-- 连接四大参数配置 -->
         <property name="jdbcUrl">jdbc:mysql://localhost:3306/blog?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8</property>
+        <!--<property name="jdbcUrl">jdbc:mysql://139.198.4.133:3306/blog?username="root"&password="521wjk0618"&useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8</property>-->
         <property name="driverClass">com.mysql.jdbc.Driver</property>
         <property name="user">root</property>
         <property name="password"></property>
