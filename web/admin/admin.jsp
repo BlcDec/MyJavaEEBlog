@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>管理 | MyBlog</title>
+    <title>管理 | BlcDec</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -32,13 +32,14 @@
 
     <div id="header">
         <div>
-            <h2><a href="/Blog/login.html">MyBlog-管理</a></h2>
+            <h2><a href="login.html">BlcDec-管理</a></h2>
             <h5 class="text-muted">再改改</h5>
         </div>
     </div>
 
     <div class="admin_div">
-        <h4 class="btn btn-default">统计</h4>
+        <button class="btn btn-default">统计</button>
+     <!--   <h4 class="btn btn-default">统计</h4>-->
         <h5> 被访问了 ${visited } 次</h5>
         <h5> 一共有 ${member}个访问者</h5>
 
@@ -52,7 +53,7 @@
                 <div class="r_div">
                     <span>${a.time}</span>
 
-                    <a href="/Blog/AdminDataServlet?op=edit_article&&article_id=${a.id}">
+                    <a href="/AdminDataServlet?op=edit_article&&article_id=${a.id}">
                         <button class="btn btn-default">&nbsp;<span class="glyphicon glyphicon-pencil" style="color:#5bc0de" >编辑</span>&nbsp;</button>
                     </a>
 
@@ -104,7 +105,7 @@
 
 
 <div id="footer">
-    <a href="#">&nbsp;&nbsp;MyBlog</a>
+    <a href="/index.jsp">&nbsp;&nbsp;BlcDec</a>
 </div>
 
 </body>

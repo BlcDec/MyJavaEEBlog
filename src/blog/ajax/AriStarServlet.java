@@ -17,7 +17,7 @@ import net.sf.json.JSONObject;
  * Servlet implementation class DeleteServlet
  */
 @WebServlet("/AriStarServlet")
-public class AriStarServlet extends HttpServlet {
+public class  AriStarServlet extends HttpServlet {
 	
 
 	

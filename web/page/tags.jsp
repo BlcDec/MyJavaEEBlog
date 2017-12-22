@@ -30,15 +30,14 @@
 
 				<div id="title">
 					<h2>
-						<a href="/index.jsp">MyBlog</a>
+						<a href="/index.jsp">BlcDec</a>
 					</h2>
-					<h5 class="text-muted">Winner Winner Chicken Dinner!</h5>
+					<h5 class="text-muted">Follow Your Heart!</h5>
 				</div>
 
 				<div class="c_center" id="person_info">
 					<img src="/img/header.jpg" height="130" width="130"
 						alt="what?" class="img-circle">
-					<h5 class="text-muted">Chicken Dinner Again!</h5>
 				</div>
 
 
@@ -116,7 +115,7 @@
 
 
 	<div id="footer">
-		<a href="#">&nbsp;&nbsp;MyBlog</a>
+		<a href="/index.jsp">&nbsp;&nbsp;BlcDec</a>
 	</div>
 	<!-- footer -->
 

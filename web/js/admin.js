@@ -53,7 +53,7 @@ function findInputInClass(class_name , name){
 // */
 //function edit_article(article_id){
 //	//send
-//	var url = "/Blog/AdminDataServlet?op=edit_article"+"&&article_id="+article_id;
+//	var url = "/AdminDataServlet?op=edit_article"+"&&article_id="+article_id;
 //	sendURL(url);
 //}
 
@@ -176,7 +176,7 @@ function edit_tag(hod,tag){
 		input_t.setAttribute("disabled","disabled");
 		
 		//提交修改请求
-		var url = "/Blog/AdminDataServlet?op=tag_update"+"&&old_tag="+temp_t+"&&new_tag="+input_t.value ;		
+		var url = "/AdminDataServlet?op=tag_update"+"&&old_tag="+temp_t+"&&new_tag="+input_t.value ;
 		sendURL(url);								
 	}
 }

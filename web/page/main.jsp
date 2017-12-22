@@ -24,15 +24,13 @@
 			<div class="col-md-3" id="left_content">
 
 				<div id="title">
-					<h2><a href="/login.html">MyBlog</a></h2>
+					<h2><a href="/login.html">BlcDec</a></h2>
 					<h5 class="text-muted">Follow Your Heart!</h5>
 				</div>
 
 				<div class="c_center" id="person_info">
 					<img src="/img/header.jpg" height="130" width="130"
 						alt="丢失了我的头像?" class="img-circle">
-					<h4 class="text-muted">Lemonreds</h4>
-					<h5 class="text-muted">星星和浮云.</h5>
 				</div>
 
 				<div class="c_center">

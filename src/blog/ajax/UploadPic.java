@@ -78,7 +78,7 @@ public class UploadPic extends HttpServlet {
 				item.delete();
                 message = message + "文件：" + fileName + "上传成功";
                 
-                String url= "/Blog/upload/"+saveFileName;
+                String url= "/upload/"+saveFileName;
                 jo.put("success", 1);
                 jo.put("message",message);
                 jo.put("url", url);                
