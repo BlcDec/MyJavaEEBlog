@@ -47,7 +47,7 @@ public class CMDissServlet extends HttpServlet {
 			// 设置有效期 15分钟
 			cookie.setMaxAge(15*60);
 			// 设置有效目录
-			cookie.setPath("/Blog");
+			cookie.setPath("/");
 			// 写会浏览器
 			response.addCookie(cookie);
 		}

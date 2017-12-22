@@ -39,10 +39,13 @@
 						<a href="#">${article_number}<br/>日志</a>
 					</div>
 					<div class="inline ">
-						<a href="/SortServlet?get=all"><span> ${sort_number} </span><br/>分类</a>
+						<a href="/SortServlet?get=all"><span>&nbsp; ${sort_number} </span><br/>&nbsp;分类</a>
 					</div>
 					<div class="inline " >
 						<a href="/TagsServlet?get=all"><span>${tags_number}</span><br/>标签</a>
+					</div>
+					<div class="inline " >
+						<a href="/TagsServlet?get=all"><span>${tags_number}</span><br/>小工具</a>
 					</div>
 					
 				</div>
@@ -179,7 +182,6 @@
 		<h6> 被访问了 ${visited } 次</h6>
 		<h6> 你是第 ${member}个访问者</h6>    
 		</div>
-		
 	</div><!-- footer -->
 </body>
 </html>

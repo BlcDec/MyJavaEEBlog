@@ -7,9 +7,9 @@
 function getXHR(){	
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
-		xmlhttp = new XMLHttpRequest();
+		xmlhttp = new XMLHttpRequest();//for others
 	} else {
-		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");//for ie
 	}
 	return xmlhttp;	
 }
@@ -67,7 +67,7 @@ function delete_article(hod , article_id){
 	var recorder_parent = recorder.parentNode;
 	recorder_parent.removeChild(recorder);
 	//send
-	var url = "/Blog/AdminDataServlet?op=delete_article"+"&&article_id="+article_id;
+	var url = "/AdminDataServlet?op=delete_article"+"&&article_id="+article_id;
 	sendURL(url);
 }
 
@@ -85,7 +85,7 @@ function delet_sort(hod,sort){
 	var recorder_parent = recorder.parentNode;
 	recorder_parent.removeChild(recorder);
 	//后台删除
-	var url = "/Blog/AdminDataServlet?op=sort_delete"+"&&sort="+sort;
+	var url = "/AdminDataServlet?op=sort_delete"+"&&sort="+sort;
 	sendURL(url);	
 }
 
@@ -120,7 +120,7 @@ function edit_sort(hod,sort){
 		input.setAttribute("disabled","disabled");
 		
 		//提交修改请求
-		var url = "/Blog/AdminDataServlet?op=sort_update"+"&&old_sort="+temp+"&&new_sort="+input.value ;		
+		var url = "/AdminDataServlet?op=sort_update"+"&&old_sort="+temp+"&&new_sort="+input.value ;
 		sendURL(url);								
 	}
 }
@@ -140,7 +140,7 @@ function delet_tag(hod,tag){
 	recorder_parent.removeChild(recorder);
 	
 	//后台删除
-	var url = "/Blog/AdminDataServlet?op=tag_delete"+"&&tag="+tag;
+	var url = "/AdminDataServlet?op=tag_delete"+"&&tag="+tag;
 	sendURL(url)	
 }
 

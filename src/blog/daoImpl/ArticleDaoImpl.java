@@ -441,6 +441,3 @@ public class ArticleDaoImpl implements ArticleDao {
 
 }
 
-// 2017年9月19日21:57:38 大吉大利 今晚吃鸡
-// bug无敌多 fuck
-// 2017年9月26日15:10:47 这个类有毒

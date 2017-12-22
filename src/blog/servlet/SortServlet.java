@@ -17,9 +17,14 @@ import blog.utils.StringUtils;
 public class SortServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
 		//获取的是所有分类 还是一个分类的文章
-		String get = StringUtils.pareCode(request.getParameter("get"));				
+		//String get = StringUtils.pareCode(request.getParameter("get"));
+		//String get=new String(request.getParameter("get").getBytes("ISO-8859-1"),"GB2312");
+		String get = new String(request.getParameter("get").getBytes("ISO-8859-1"), "UTF-8");
+		System.out.println(get);
 		//初始化分类和和文章
 		ArticleService as = ArticleService.getInstance();		
 		request.setAttribute("sort_article_map",as.getSortAndAirticle(get));					

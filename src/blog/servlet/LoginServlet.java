@@ -25,9 +25,11 @@ import blog.utils.LoginUtils;
 public class LoginServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			
+
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
+
 		LoginUtils.login(request);
-		
 		//初始化分类
 		ArticleService as =  ArticleService.getInstance();		
 		request.setAttribute("sort_count_map", as.getSortAndCount());
@@ -44,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 		
 		//阅读排行
 		request.setAttribute("visit_rank", as.getVisitRank());
-		
+
 		//传网站的统计数据
 		request.setAttribute("visited", VisitorDB.totalVisit());
 		request.setAttribute("member", VisitorDB.totalMember());

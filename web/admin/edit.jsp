@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>编辑文章 | MyBlog</title>
+    <title>编辑文章 | BlcDec</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -33,10 +33,10 @@
 <body>
 <div class="head_line"></div>
 <div class="container" id="main">
-    <div id="title"><h2><a href="/Blog/index.jsp">MyBlog</a></h2>
+    <div id="title"><h2><a href="/index.jsp">MyBlog</a></h2>
     </div>
 
-    <form action="/Blog/UpdateServlet" method="post">
+    <form action="/UpdateServlet" method="post">
 
         <div class="info" >
             <!-- id -->
@@ -81,7 +81,7 @@
 </div><!-- container -->
 
 <div id="footer">
-    <a href="#">&nbsp;&nbsp;MyBlog</a>
+    <a href="/index.jsp">&nbsp;&nbsp;BlcDec</a>
 
 </div> <!-- footer -->
 
